@@ -13,20 +13,18 @@ public class TimeMemorySeed implements Seeder{
 
     @Override
     public long getSeed() {
-        for (int i = 0; i < 10; i++) {
-            java.util.Random r = new java.util.Random();
+        java.util.Random r = new java.util.Random();
 //            System.out.println("time: "+System.currentTimeMillis());
 //            System.out.println("mem: "+Runtime.getRuntime().freeMemory());
-           
-            int size = Math.abs(r.nextInt())%1024;
-            size += 256;
-            
-            long[][] a = new long[size][size];
-            
-            for (int j = 0; j < size; j++) {
-                for (int k = 0; k < size; k++) {
-                    a[j][k]=System.currentTimeMillis();
-                }
+
+        int size = Math.abs(r.nextInt())%8;
+        size += 4;
+
+        long[][] a = new long[size][size];
+
+        for (int j = 0; j < size; j++) {
+            for (int k = 0; k < size; k++) {
+                a[j][k]=System.currentTimeMillis();
             }
         }
         long seed = Runtime.getRuntime().freeMemory()*System.nanoTime()%1024;
