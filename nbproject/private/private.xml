@@ -2,6 +2,19 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/perlin/NoiseGenerator.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/core/seeder/Seeder.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/perlin/ImageDrawer.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/core/metodos/QuadradoDoMeio.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/core/random/Random.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/core/seeder/RandomOrg.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/perlin/NoiseDrawer.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/ui/MainWindow.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/core/metodos/RandomGenerator.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/core/metodos/CongruenteLinear.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/core/seeder/TimeMemorySeed.java</file>
+            <file>file:/C:/Users/lite/Documents/Github/Random/src/br/beholder/random/core/seeder/GetPixelColor.java</file>
+        </group>
     </open-files>
 </project-private>

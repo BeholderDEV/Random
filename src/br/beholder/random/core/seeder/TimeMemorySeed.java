@@ -5,32 +5,28 @@
  */
 package br.beholder.random.core.seeder;
 
+import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author 5663296
  */
 public class TimeMemorySeed implements Seeder{
-
+    Random r = new Random();
+    
     @Override
     public long getSeed() {
-        java.util.Random r = new java.util.Random();
-//            System.out.println("time: "+System.currentTimeMillis());
-//            System.out.println("mem: "+Runtime.getRuntime().freeMemory());
-
-        int size = Math.abs(r.nextInt())%8;
-        size += 4;
-
-        long[][] a = new long[size][size];
-
-        for (int j = 0; j < size; j++) {
-            for (int k = 0; k < size; k++) {
-                a[j][k]=System.currentTimeMillis();
-            }
-        }
-        long seed = Runtime.getRuntime().freeMemory()*System.nanoTime()%1024;
+        long seed = r.nextInt();
         seed = Math.abs(seed);
         if(seed!=0){
             return seed;
+        }
+        try {
+            Thread.sleep(133);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(TimeMemorySeed.class.getName()).log(Level.SEVERE, null, ex);
         }
         return getSeed();
     }

@@ -28,10 +28,10 @@ public class CongruenteLinear implements RandomGenerator{
     
     @Override
     public long generate() {
-        System.out.println("X"+0+": "+xn);
+        System.out.println(xn%m);
         for (int i = 1; i < qtd; i++) {
             xn = (a*xn+b)%m;
-            System.out.println("X"+i+": "+xn);
+            System.out.println(xn);
         }
         return 0;
     }
