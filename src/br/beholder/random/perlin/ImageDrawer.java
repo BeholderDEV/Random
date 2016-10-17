@@ -14,7 +14,7 @@ import java.awt.image.BufferedImage;
  * @author lite
  */
 public class ImageDrawer {
-    public Image generateImage(Color[][] colors){
+    public BufferedImage generateImage(Color[][] colors){
         int w = colors.length;
         int h = colors[0].length;
         BufferedImage image = new BufferedImage(w,h,BufferedImage.TYPE_INT_ARGB);
